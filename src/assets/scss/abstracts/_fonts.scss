@@ -1,5 +1,5 @@
-@include font-face(
-        'Roboto', 
-        'https://fonts.googleapis.com/css2?family=Roboto&display=swap', 
-        300, 
-        $file-formats: ttf)
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$text-size: 62.5%;
+$line-height: 1.6rem;
+$font-family: 'Roboto', sans-serif;

@@ -1,0 +1,40 @@
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-text{
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+  }
+
+  &__navbar {
+    &-item {
+      display: inline-block;
+      font-size: 1.5rem;
+      margin-left: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
