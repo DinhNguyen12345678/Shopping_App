@@ -1,0 +1,60 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.content {
+  //   background-color: $main-color;
+  padding: 3rem 5rem;
+
+  &--main {
+    display: flex;
+    justify-content: space-between;
+
+    .left-col {
+      width: 75%;
+      position: relative;
+
+      .part {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: none;
+        border-radius: 2rem;
+        border: 5px solid $main-color;
+        height: 45rem;
+        transition: display 1s ease-in-out;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      .home {
+        overflow: hidden;
+
+        &__slider {
+          &-item {
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .slick-arrow {
+            display: none;
+          }
+        }
+      }
+
+      .about {
+        &__information {
+        }
+      }
+
+    }
+
+    .right-col {
+      width: 20%;
+    }
+  }
+}

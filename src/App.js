@@ -1,10 +1,10 @@
-import { HomePage } from './Component/HomePage';
+import { ContentPage } from './Component/ContentPage';
 import './assets/scss/styles.scss';
 
 function App() {
   return (
     <div className="app-wrapper">
-        <HomePage />
+        <ContentPage />
     </div>
   );
 }
