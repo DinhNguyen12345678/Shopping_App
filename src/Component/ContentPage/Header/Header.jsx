@@ -51,6 +51,8 @@ export default function Header( props ) {
                             onClick={() => handleChangeTabMenu(tab.index)}
                         >
                             {tab.title}
+
+                            <div className="tabDot"></div>
                         </li>
                     ))
                 }

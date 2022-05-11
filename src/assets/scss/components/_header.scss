@@ -40,9 +40,26 @@
       margin-left: 3rem;
       cursor: pointer;
       color: $text-color;
+      position: relative;
 
       &.active {
         font-weight: bold;
+
+        .tabDot{
+            opacity: 1;
+            transition: opacity 0.5s linear;
+        }
+      }
+
+      .tabDot {
+        position: absolute;
+        border-radius: 50%;
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: $text-color;
+        left: calc(50% - 0.35rem);
+        bottom: -1.5rem;
+        opacity: 0;
       }
     }
   }
